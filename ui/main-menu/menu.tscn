@@ -1,0 +1,197 @@
+[gd_scene load_steps=6 format=3 uid="uid://ixq3tyquspfr"]
+
+[ext_resource type="Script" uid="uid://d3sd2ng582nye" path="res://ui/main-menu/menu.gd" id="1_hk6kk"]
+[ext_resource type="FontFile" uid="uid://cffdj2mth1fmw" path="res://assets/fonts/vinque/Vinque Rg.otf" id="2_hk6kk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k0imn"]
+font = ExtResource("2_hk6kk")
+font_size = 96
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hk6kk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hk6kk"]
+font = ExtResource("2_hk6kk")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hk6kk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6, 0.6, 1, 0.6)
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -517.5
+offset_top = -174.5
+offset_right = 517.5
+offset_bottom = 62.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "             C.S.I
+Célula Sob Investigação"
+label_settings = SubResource("LabelSettings_k0imn")
+
+[node name="ButtonsContainers" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -78.5
+offset_top = -252.0
+offset_right = 78.5
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="NewGame" type="Button" parent="ButtonsContainers" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_fonts/font = ExtResource("2_hk6kk")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hk6kk")
+text = "Novo Jogo"
+flat = true
+alignment = 0
+
+[node name="Shadow" type="Label" parent="ButtonsContainers/NewGame"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -18.0
+offset_right = 74.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Novo Jogo"
+label_settings = SubResource("LabelSettings_hk6kk")
+
+[node name="Options" type="Button" parent="ButtonsContainers" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_fonts/font = ExtResource("2_hk6kk")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hk6kk")
+text = "Opções"
+flat = true
+alignment = 0
+
+[node name="Shadow" type="Label" parent="ButtonsContainers/Options"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -18.0
+offset_right = 74.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Opções"
+label_settings = SubResource("LabelSettings_hk6kk")
+
+[node name="Creditis" type="Button" parent="ButtonsContainers" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_fonts/font = ExtResource("2_hk6kk")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hk6kk")
+text = "Créditos"
+flat = true
+alignment = 0
+
+[node name="Shadow" type="Label" parent="ButtonsContainers/Creditis"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -18.0
+offset_right = 74.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Créditos"
+label_settings = SubResource("LabelSettings_hk6kk")
+
+[node name="Quit" type="Button" parent="ButtonsContainers" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_fonts/font = ExtResource("2_hk6kk")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hk6kk")
+text = "Sair"
+flat = true
+alignment = 0
+
+[node name="Shadow" type="Label" parent="ButtonsContainers/Quit"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.5
+offset_top = -18.0
+offset_right = 74.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sair"
+label_settings = SubResource("LabelSettings_hk6kk")
+
+[node name="Version" type="Label" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = -56.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Versão 0.0"
+label_settings = SubResource("LabelSettings_hk6kk")
