@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjhmq88yjisi5"]
+[gd_scene load_steps=6 format=3 uid="uid://wb0e275rt4gc"]
 
 [ext_resource type="Script" uid="uid://b442s54pwf0mi" path="res://Scripts/player.gd" id="1_gfjak"]
 [ext_resource type="Texture2D" uid="uid://ibffwu8awnvp" path="res://assets/sprites/pieceRed_border02.png" id="1_wr5hl"]

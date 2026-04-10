@@ -7,7 +7,7 @@ func _ready() -> void:
 func _on_button_pressed(_button: Button) -> void:
 	match _button.name:
 		"newGameButton":
-			get_tree().change_scene_to_file("res://scenes/levels/Levels01.tscn")
+			get_tree().change_scene_to_file("res://scenes/levels/game_board.tscn")
 		"tutorialButton":
 			get_tree().change_scene_to_file("res://ui/tutorialPages/tutorial.tscn")
 		"glossaryButton":
