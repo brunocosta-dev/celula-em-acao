@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4ym6m230xofk"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_j885j"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_4inie"]
+
+[node name="FosforilacaoOxidativaGlossary" instance=ExtResource("1_j885j")]
+script = ExtResource("2_4inie")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+offset_top = 65.5
+offset_bottom = 356.5
+text = "FOSFORILACAO
+OXIDATIVA"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 607.1428
+offset_bottom = 503.375
+text = "Etapa final e principal fonte de ATP.
+
+Usa o gradiente criado na cadeia de
+elétrons junto com o oxigênio e a en-
+zima ATP sintase."

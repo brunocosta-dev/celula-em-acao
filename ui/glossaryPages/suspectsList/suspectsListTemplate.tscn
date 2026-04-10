@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcn8vp6lse7r6"]
 
 [ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_5mncq"]
-[ext_resource type="Script" uid="uid://dsu7pnmvf8m23" path="res://ui/glossaryPages/code_glossary.gd" id="2_8alfv"]
+[ext_resource type="Script" uid="uid://dsu7pnmvf8m23" path="res://ui/glossaryPages/code_suspect_glossary.gd" id="2_8alfv"]
 
 [node name="SuspectsListTemplate" instance=ExtResource("1_5mncq")]
 script = ExtResource("2_8alfv")

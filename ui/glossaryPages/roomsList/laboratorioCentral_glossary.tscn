@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgcxgy0m2o5h8"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_ii7rg"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_1sf36"]
+
+[node name="LaboratorioCentralGlossary" instance=ExtResource("1_ii7rg")]
+script = ExtResource("2_1sf36")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+offset_top = 65.5
+offset_bottom = 356.5
+text = "LABORATÓRIO
+CENTRAL"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 639.28564
+offset_bottom = 245.375
+text = "Local estratégico para as ações do joga-
+dor."

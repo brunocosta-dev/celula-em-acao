@@ -8,7 +8,6 @@ bg_color = Color(1, 1, 1, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_py3xt"]
 
 [node name="DefaultGlossary" instance=ExtResource("1_3v0c1")]
-script = null
 
 [node name="paperDesign" type="Panel" parent="ShadowLayer/openFolder" index="0"]
 layout_mode = 1

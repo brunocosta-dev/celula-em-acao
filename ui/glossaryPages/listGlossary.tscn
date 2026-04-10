@@ -109,7 +109,7 @@ offset_right = 1175.0
 offset_bottom = 1010.75024
 grow_vertical = 0
 
-[node name="atpMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="0" groups=["button"]]
+[node name="atpMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="0" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -122,7 +122,7 @@ text = "ATP Mutante"
 flat = true
 alignment = 0
 
-[node name="celulaOrganizada" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="1" groups=["button"]]
+[node name="celulaOrganizada" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="1" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -135,7 +135,7 @@ text = "Célula Organizada"
 flat = true
 alignment = 0
 
-[node name="enzimaCatalisadora" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="2" groups=["button"]]
+[node name="enzimaCatalisadora" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="2" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -148,7 +148,7 @@ text = "Enzima Catalizadora"
 flat = true
 alignment = 0
 
-[node name="mitocondriaZumbi" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="3" groups=["button"]]
+[node name="mitocondriaZumbi" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="3" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -161,7 +161,7 @@ text = "Mitocôndria Zumbi"
 flat = true
 alignment = 0
 
-[node name="mitoEnergetico" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="4" groups=["button"]]
+[node name="mitoEnergetico" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="4" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -174,7 +174,7 @@ text = "Mito Energético"
 flat = true
 alignment = 0
 
-[node name="organoideClonado" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="5" groups=["button"]]
+[node name="organoideClonado" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="5" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -187,7 +187,7 @@ text = "Organoide Clonado"
 flat = true
 alignment = 0
 
-[node name="oxigenioExplosivo" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="6" groups=["button"]]
+[node name="oxigenioExplosivo" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="6" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -200,7 +200,7 @@ text = "Oxigênio Explosivo"
 flat = true
 alignment = 0
 
-[node name="radicalLivreSolto" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="7" groups=["button"]]
+[node name="radicalLivreSolto" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="7" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -213,7 +213,7 @@ text = "Radical Livre Solto"
 flat = true
 alignment = 0
 
-[node name="radicalRaivoso" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="8" groups=["button"]]
+[node name="radicalRaivoso" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="8" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -226,7 +226,7 @@ text = "Radical Raivoso"
 flat = true
 alignment = 0
 
-[node name="rnaMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="9" groups=["button"]]
+[node name="rnaMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="9" groups=["listSuspect"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -268,7 +268,7 @@ offset_right = 1175.0
 offset_bottom = 1010.75024
 grow_vertical = 0
 
-[node name="room1" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="0" groups=["button"]]
+[node name="cadeiaTranspDeEletrons" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="0" groups=["listRoom"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
 theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
@@ -277,7 +277,124 @@ theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = SubResource("FontFile_12aei")
 theme_override_font_sizes/font_size = 55
-text = "Sala 01"
+text = "Cadeia Transportadora De Elétrons"
+flat = true
+alignment = 0
+
+[node name="cicloDeKrebs" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="1" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Ciclo De Krebs"
+flat = true
+alignment = 0
+
+[node name="descarboxilacaoDoPiruvato" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="2" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Descarboxilção Do Piruvato"
+flat = true
+alignment = 0
+
+[node name="fosforilacaoOxidativa" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="3" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Fosforilação Oxidativa"
+flat = true
+alignment = 0
+
+[node name="glicolise" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="4" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Glicolise"
+flat = true
+alignment = 0
+
+[node name="laboratorioCentral" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="5" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Laboratório Central"
+flat = true
+alignment = 0
+
+[node name="producaoDeAcetilCoa" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="6" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Produção De Acetil COA"
+flat = true
+alignment = 0
+
+[node name="reservaDeGlicose" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="7" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Reserva De Glicose"
+flat = true
+alignment = 0
+
+[node name="setorGenetico" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="8" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Setor Genético"
+flat = true
+alignment = 0
+
+[node name="zonaToxica" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="9" groups=["listRoom"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Zona Txica"
 flat = true
 alignment = 0
 

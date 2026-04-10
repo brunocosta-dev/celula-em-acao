@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://ifx3nncn1qui"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_fn8lw"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_4m6u7"]
+
+[node name="ProducaoDeAcetilCoaGlossary" instance=ExtResource("1_fn8lw")]
+script = ExtResource("2_4m6u7")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+offset_top = 65.5
+offset_bottom = 356.5
+text = "PRODUÇÃO DE
+ACETIL-COA"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_left = -511.25012
+offset_right = 635.7499
+offset_bottom = 503.375
+text = "É onde está o DNA mitocondrial.
+
+Aqui as mutações causam defeitos nas
+proteínas responsáveis pela respiração 
+celular."

@@ -1,15 +1,24 @@
 extends Control
 
 func _ready() -> void:
-	for _button in get_tree().get_nodes_in_group("button"):
-		if _button is Button:
-			_button.pressed.connect(_on_button_pressed.bind(_button))
+	# 1. Botões de Navegação (Home, Prev, Next)
+	for btn in get_tree().get_nodes_in_group("button"):
+		if btn is Button:
+			btn.pressed.connect(_on_nav_pressed.bind(btn))
+	
+	# 2. Botões de Suspeitos
+	for btn in get_tree().get_nodes_in_group("listSuspect"):
+		if btn is Button:
+			btn.pressed.connect(_on_glossary_pressed.bind(btn, "suspectsList"))
+			
+	# 3. Botões de Salas
+	for btn in get_tree().get_nodes_in_group("listRoom"):
+		if btn is Button:
+			btn.pressed.connect(_on_glossary_pressed.bind(btn, "roomsList"))
 
-func _on_button_pressed(_button: Button) -> void:
-	var b_name = _button.name
-
-	# 1. Tratamento para botões com funções fixas
-	match b_name:
+# Função para Navegação Geral
+func _on_nav_pressed(_button: Button) -> void:
+	match _button.name.to_lower():
 		"home":
 			get_tree().change_scene_to_file("res://ui/menu.tscn")
 		"previous":
@@ -17,12 +26,11 @@ func _on_button_pressed(_button: Button) -> void:
 		"next":
 			pass
 
-	# 2. Tratamento Automático para o Glossário
-	# Se não caiu no match acima, o script assume que o nome do botão é o nome da cena
-	var path = "res://ui/glossaryPages/suspectsList/" + b_name + "_glossary.tscn"
+# Função Genérica para o Glossário (Salas e Suspeitos)
+func _on_glossary_pressed(_button: Button, folder: String) -> void:
+	var path = "res://ui/glossaryPages/" + folder + "/" + _button.name + "_glossary.tscn"
 	
 	if FileAccess.file_exists(path):
 		get_tree().change_scene_to_file(path)
 	else:
-		# Isso ajuda muito no debug se você digitar algo errado no editor
-		print("ERRO: Tentativa de carregar cena inexistente: ", path)
+		print("ERRO: Cena não encontrada em: ", path)

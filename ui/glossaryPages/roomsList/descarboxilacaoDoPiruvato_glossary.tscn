@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5uwatmklg0w7"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_tw4kn"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_xqjsn"]
+
+[node name="DescarboxilacaoDoPiruvatoGlossary" instance=ExtResource("1_tw4kn")]
+script = ExtResource("2_xqjsn")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+offset_top = 65.5
+offset_bottom = 356.5
+text = "DESCARBOXILAÇÃO
+DO PIRUVATO"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 642.8572
+offset_bottom = 589.375
+text = "Ponto-Chave entre a glicose e o Ciclo 
+de Krebs.
+
+Sem essa molécula a mitocôndria não
+inicia sua produção avançada de ener-
+gia."

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu7cu80asnaha"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_b12uw"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_jovlc"]
+
+[node name="ZonaToxicaGlossary" instance=ExtResource("1_b12uw")]
+script = ExtResource("2_jovlc")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "ZONA TÓXICA"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 617.8572
+offset_bottom = 503.375
+text = "Área onde ocorre danos por toxinas ou
+radicais livres.
+
+Aqui, as estruturas celulares e as enzi-
+mas podem ser destruídas."
+
+[node name="next" parent="container/buttonsContainer" index="2"]
+disabled = true

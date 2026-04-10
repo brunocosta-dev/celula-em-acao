@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqbgjc6x6tnau"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_i1kjx"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_7or82"]
+
+[node name="SetorGeneticoGlossary" instance=ExtResource("1_i1kjx")]
+script = ExtResource("2_7or82")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "SETOR GENÉTICO"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 614.28564
+offset_bottom = 589.375
+text = "Converte o Piruvato (produto da glico-
+se) em Acetil-COA, liberando C02 e ge-
+rando NADH.
+
+Etapa de transição para o Ciclo de Kre-
+bs."

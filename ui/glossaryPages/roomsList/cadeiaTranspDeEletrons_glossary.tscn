@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://boh6dxa5kggnf"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_xo3lj"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_t67o7"]
+
+[node name="CadeiaTranspDeEletronsGlossary" instance=ExtResource("1_xo3lj")]
+script = ExtResource("2_t67o7")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+offset_top = 65.5
+offset_bottom = 503.5
+text = "CADEIA
+TRANSPORTADORA
+DE ELÉTRONS"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 614.28564
+offset_bottom = 417.375
+text = "Usa elétrons vindos do NADH e FADH2
+para criar um gradiente de prótons,
+preparando a célula para a produção
+final de ATP."

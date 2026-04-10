@@ -1,19 +1,19 @@
 extends Control
 
-# O "Mapa" do seu glossário/investigação na ordem correta
+# Mapeamento de ambientes do jogo
 const NAVIGATION_ORDER = [
 	"res://ui/menu.tscn",
 	"res://ui/glossaryPages/listGlossary.tscn",
-	"res://ui/glossaryPages/suspectsList/atpMutante_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/celulaOrganizada_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/enzimaCatalisadora_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/mitocondriaZumbi_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/mitoEnergetico_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/organoideClonado_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/oxigenioExplosivo_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/radicalLivreSolto_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/radicalRaivoso_glossary.tscn",
-	"res://ui/glossaryPages/suspectsList/rnaMutante_glossary.tscn"
+	"res://ui/glossaryPages/roomsList/cadeiaTranspDeEletrons_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/cicloDeKrebs_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/descarboxilacaoDoPiruvato_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/fosforilacaoOxidativa_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/glicolise_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/laboratorioCentral_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/producaoDeAcetilCoa_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/reservaDeGlicose_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/setorGenetico_glossary.tscn",
+	"res://ui/glossaryPages/roomsList/zonaToxica_glossary.tscn"
 ]
 
 func _ready() -> void:
@@ -25,7 +25,7 @@ func _on_button_pressed(_button: Button) -> void:
 	# 1. Descobre o caminho da cena atual
 	var current_path = get_tree().current_scene.scene_file_path
 	
-	# 2. Encontra o índice (posição) atual na nossa lista
+	# 2. Encontra o índice (posição) atual na lista
 	var current_index = NAVIGATION_ORDER.find(current_path)
 
 	match _button.name.to_lower():

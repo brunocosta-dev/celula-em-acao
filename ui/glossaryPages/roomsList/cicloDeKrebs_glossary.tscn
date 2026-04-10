@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3duixinf5klk"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_jrw4f"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_tkag2"]
+
+[node name="CicloDeKrebsGlossary" instance=ExtResource("1_jrw4f")]
+script = ExtResource("2_tkag2")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "CICLO DE KREBS"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 610.71436
+offset_bottom = 675.375
+text = "Ocorre dentro da mitocôndria.
+
+Gera CO2, NADH e FADH2 a partir do
+Acetil-COA.
+
+É uma etapa central da respiração ce-
+lular."

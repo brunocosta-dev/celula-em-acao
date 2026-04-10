@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://clbgqmlr6ctmr"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_5ilq7"]
+[ext_resource type="Script" uid="uid://bdyjdkyp27afl" path="res://ui/glossaryPages/roomsList/code_rooms_glossary.gd" id="2_esd2c"]
+
+[node name="ReservaDeGlicoseGlossary" instance=ExtResource("1_5ilq7")]
+script = ExtResource("2_esd2c")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "RESERVA DE GLICOSE"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Descrição"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 642.8572
+offset_bottom = 503.375
+text = "Armazena glicose em forma de glicogê-
+nio.
+
+Serve como fonte de energia extra em 
+momentos de necessidade."
