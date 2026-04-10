@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu16i8oo2tblh"]
+
+[ext_resource type="PackedScene" uid="uid://bmcp40hpka4et" path="res://ui/defaultTemplate.tscn" id="1_iq6tj"]
+[ext_resource type="Script" uid="uid://b8m3jpbrwlkjq" path="res://ui/creditsPages/code_credits.gd" id="2_m3562"]
+
+[node name="Creditos" instance=ExtResource("1_iq6tj")]
+script = ExtResource("2_m3562")
+
+[node name="title" parent="ShadowLayer/openFolder" index="0"]
+text = "Créditos"
+
+[node name="previous" parent="container/buttonsContainer" index="1"]
+disabled = true

@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsbfbdye7od17"]
+
+[ext_resource type="Texture2D" uid="uid://csscj06nkiqil" path="res://images/backgroudImage.png" id="1_tcww1"]
+
+[node name="DefaultBackground" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="BackGroundLayer" type="ParallaxLayer" parent="Background"]
+
+[node name="Texture" type="TextureRect" parent="Background/BackGroundLayer"]
+offset_right = 3064.0
+offset_bottom = 1708.0
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("1_tcww1")
+
+[node name="ShadowLayer" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 0.43137255)

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://blc0hlxi6apjq"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_iembi"]
+[ext_resource type="Texture2D" uid="uid://dik646ni83f2w" path="res://images/Glossary/Oxigenio_explosivo.png" id="2_dnj3j"]
+
+[node name="OxigenioExplosivoGlossary" instance=ExtResource("1_iembi")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -557.1428
+offset_top = -259.375
+offset_right = 528.57153
+offset_bottom = 290.625
+texture = ExtResource("2_dnj3j")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "OXIGÊNIO EXPLOSIVO"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_bottom = 245.375
+text = "Participa das etapas finais de produ-
+ção de energia."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+offset_bottom = 245.375
+text = "Em falta, paralisa. Em excesso, gera
+radicais."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Sua ausência ou excesso causa gran-
+des problemas."

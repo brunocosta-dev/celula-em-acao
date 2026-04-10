@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://7u5lfrcvajag"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_6el0s"]
+[ext_resource type="Texture2D" uid="uid://db82p6v2go55k" path="res://images/Glossary/Enzima_catalizadora.png" id="2_mmk7y"]
+
+[node name="EnzimaCatalisadoraGlossary" instance=ExtResource("1_6el0s")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -275.0
+offset_top = -319.0
+offset_right = 275.0
+offset_bottom = 319.0
+texture = ExtResource("2_mmk7y")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "ENZIMA CATALISADORA"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Acelera reações do metabolismo."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+offset_bottom = 245.375
+text = "Se estiver ausente ou danificada o
+processo para."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_right = 617.8573
+offset_bottom = 234.125
+text = "Essencial, mas se inativa, atrapalha tu-
+do."

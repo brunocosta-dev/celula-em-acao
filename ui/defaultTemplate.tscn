@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmcp40hpka4et"]
+
+[ext_resource type="PackedScene" uid="uid://dsbfbdye7od17" path="res://ui/default_background.tscn" id="1_7u0qu"]
+[ext_resource type="Texture2D" uid="uid://qnst02tqmqf7" path="res://images/openFolder.png" id="2_mc8ve"]
+[ext_resource type="Texture2D" uid="uid://emxpubrier6t" path="res://images/Icons/nav_abled_home.svg" id="3_crpjm"]
+[ext_resource type="Texture2D" uid="uid://bqpy677c42ow7" path="res://images/Icons/nav_abled_left.svg" id="4_3opy0"]
+[ext_resource type="Texture2D" uid="uid://csqd4uwhyv33a" path="res://images/Icons/nav_abled_right.svg" id="5_ga0sw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pn1s"]
+bg_color = Color(0, 0, 0, 0.6156863)
+
+[node name="DefaultTemplate" instance=ExtResource("1_7u0qu")]
+
+[node name="openFolder" type="TextureRect" parent="ShadowLayer" index="0"]
+layout_mode = 0
+offset_left = 197.99997
+offset_top = 90.00001
+offset_right = 3262.0
+offset_bottom = 1858.0
+scale = Vector2(0.28, 0.32)
+texture = ExtResource("2_mc8ve")
+
+[node name="title" type="Label" parent="ShadowLayer/openFolder" index="0"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -1264.1428
+offset_top = 265.625
+offset_right = 136.85718
+offset_bottom = 381.625
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 85
+text = "Aqui vai o título"
+
+[node name="description" type="Label" parent="ShadowLayer/openFolder/title" index="0"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -650.5002
+offset_top = 76.37488
+offset_right = 254.49982
+offset_bottom = 159.37488
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 60
+text = "Aqui vai o texto"
+
+[node name="container" type="Panel" parent="." index="2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -152.5
+offset_top = -78.0
+offset_right = 152.5
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7pn1s")
+
+[node name="buttonsContainer" type="HBoxContainer" parent="container" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 70
+alignment = 1
+
+[node name="home" type="Button" parent="container/buttonsContainer" index="0" groups=["button"]]
+layout_mode = 2
+icon = ExtResource("3_crpjm")
+flat = true
+
+[node name="previous" type="Button" parent="container/buttonsContainer" index="1" groups=["button"]]
+layout_mode = 2
+icon = ExtResource("4_3opy0")
+flat = true
+
+[node name="next" type="Button" parent="container/buttonsContainer" index="2" groups=["button"]]
+layout_mode = 2
+icon = ExtResource("5_ga0sw")
+flat = true

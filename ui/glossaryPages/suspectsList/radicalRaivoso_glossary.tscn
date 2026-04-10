@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx72n0xrpboeh"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_ro258"]
+[ext_resource type="Texture2D" uid="uid://brgux64guvvci" path="res://images/Glossary/Radical_raivoso.png" id="2_31p1l"]
+
+[node name="RadicalRaivosoGlosary" instance=ExtResource("1_ro258")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -637.5
+offset_top = -310.1563
+offset_right = 637.5
+offset_bottom = 310.1563
+texture = ExtResource("2_31p1l")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "RADICAL RAIVOSO"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Representa o estresse oxidativo."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+offset_bottom = 245.375
+text = "Danifica tudo ao redor, especialemen-
+te mitocôndrias."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Pode causar falhas em qualquer eta-
+pa se não for neutralizado."

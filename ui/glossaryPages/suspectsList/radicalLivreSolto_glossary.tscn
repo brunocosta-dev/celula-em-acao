@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu40tq70nof4j"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_2wnsq"]
+[ext_resource type="Texture2D" uid="uid://byy7t0kn3jers" path="res://images/Glossary/Radical_livre_solto.png" id="2_54rch"]
+
+[node name="RadicalLivreSoltoGlossary" instance=ExtResource("1_2wnsq")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -324.99988
+offset_top = -312.5
+offset_right = 317.8572
+offset_bottom = 412.50012
+texture = ExtResource("2_54rch")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "RADICAL LIVRE SOLTO"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Forma altamente reativa do radical."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+text = "Danifica lipídios, proteínas e DNA."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Pode ser o principal responsável por
+estresse oxidativo."

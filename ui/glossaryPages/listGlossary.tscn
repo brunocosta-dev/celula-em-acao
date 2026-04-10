@@ -1,0 +1,315 @@
+[gd_scene load_steps=6 format=3 uid="uid://dckh7bwsfg8l1"]
+
+[ext_resource type="PackedScene" uid="uid://bmcp40hpka4et" path="res://ui/defaultTemplate.tscn" id="1_h77j1"]
+[ext_resource type="Script" uid="uid://cguoeuk02o2j1" path="res://ui/glossaryPages/code_list_glossary.gd" id="2_tn8nw"]
+
+[sub_resource type="FontVariation" id="FontVariation_0645v"]
+
+[sub_resource type="FontFile" id="FontFile_12aei"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/46/0/ascent = 0.0
+cache/0/46/0/descent = 0.0
+cache/0/46/0/underline_position = 0.0
+cache/0/46/0/underline_thickness = 0.0
+cache/0/46/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/47/0/ascent = 0.0
+cache/0/47/0/descent = 0.0
+cache/0/47/0/underline_position = 0.0
+cache/0/47/0/underline_thickness = 0.0
+cache/0/47/0/scale = 1.0
+cache/0/48/0/ascent = 0.0
+cache/0/48/0/descent = 0.0
+cache/0/48/0/underline_position = 0.0
+cache/0/48/0/underline_thickness = 0.0
+cache/0/48/0/scale = 1.0
+cache/0/49/0/ascent = 0.0
+cache/0/49/0/descent = 0.0
+cache/0/49/0/underline_position = 0.0
+cache/0/49/0/underline_thickness = 0.0
+cache/0/49/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+cache/0/51/0/ascent = 0.0
+cache/0/51/0/descent = 0.0
+cache/0/51/0/underline_position = 0.0
+cache/0/51/0/underline_thickness = 0.0
+cache/0/51/0/scale = 1.0
+cache/0/52/0/ascent = 0.0
+cache/0/52/0/descent = 0.0
+cache/0/52/0/underline_position = 0.0
+cache/0/52/0/underline_thickness = 0.0
+cache/0/52/0/scale = 1.0
+cache/0/53/0/ascent = 0.0
+cache/0/53/0/descent = 0.0
+cache/0/53/0/underline_position = 0.0
+cache/0/53/0/underline_thickness = 0.0
+cache/0/53/0/scale = 1.0
+cache/0/54/0/ascent = 0.0
+cache/0/54/0/descent = 0.0
+cache/0/54/0/underline_position = 0.0
+cache/0/54/0/underline_thickness = 0.0
+cache/0/54/0/scale = 1.0
+cache/0/55/0/ascent = 0.0
+cache/0/55/0/descent = 0.0
+cache/0/55/0/underline_position = 0.0
+cache/0/55/0/underline_thickness = 0.0
+cache/0/55/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6f6vn"]
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.83137256, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="ListGlossary" instance=ExtResource("1_h77j1")]
+script = ExtResource("2_tn8nw")
+
+[node name="title" parent="ShadowLayer/openFolder" index="0"]
+offset_top = 237.49976
+offset_right = -96.285645
+offset_bottom = 500.49976
+theme_override_font_sizes/font_size = 95
+text = "RELATÓRIO DA 
+INVESTIGAÇÃO"
+horizontal_alignment = 1
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_left = -576.78595
+offset_top = 176.12463
+offset_right = 598.21423
+offset_bottom = 272.12463
+theme_override_fonts/font = SubResource("FontVariation_0645v")
+theme_override_font_sizes/font_size = 70
+text = "Lista de Suspeitos"
+
+[node name="suspectsList" type="VBoxContainer" parent="ShadowLayer/openFolder/title/description" index="0"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 71.428955
+offset_top = 25.625
+offset_right = 1175.0
+offset_bottom = 1010.75024
+grow_vertical = 0
+
+[node name="atpMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="0" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "ATP Mutante"
+flat = true
+alignment = 0
+
+[node name="celulaOrganizada" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="1" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Célula Organizada"
+flat = true
+alignment = 0
+
+[node name="enzimaCatalisadora" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="2" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Enzima Catalizadora"
+flat = true
+alignment = 0
+
+[node name="mitocondriaZumbi" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="3" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Mitocôndria Zumbi"
+flat = true
+alignment = 0
+
+[node name="mitoEnergetico" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="4" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Mito Energético"
+flat = true
+alignment = 0
+
+[node name="organoideClonado" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="5" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Organoide Clonado"
+flat = true
+alignment = 0
+
+[node name="oxigenioExplosivo" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="6" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Oxigênio Explosivo"
+flat = true
+alignment = 0
+
+[node name="radicalLivreSolto" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="7" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Radical Livre Solto"
+flat = true
+alignment = 0
+
+[node name="radicalRaivoso" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="8" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Radical Raivoso"
+flat = true
+alignment = 0
+
+[node name="rnaMutante" type="Button" parent="ShadowLayer/openFolder/title/description/suspectsList" index="9" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "RNA Mutante"
+flat = true
+alignment = 0
+
+[node name="description" type="Label" parent="ShadowLayer/openFolder/title/description" index="1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 830.3573
+offset_top = -336.87463
+offset_right = 2005.3575
+offset_bottom = -240.87463
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_fonts/font = SubResource("FontVariation_0645v")
+theme_override_font_sizes/font_size = 70
+text = "Lista de Ambientes"
+
+[node name="roomList" type="VBoxContainer" parent="ShadowLayer/openFolder/title/description/description" index="0"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 71.428955
+offset_top = 25.625
+offset_right = 1175.0
+offset_bottom = 1010.75024
+grow_vertical = 0
+
+[node name="room1" type="Button" parent="ShadowLayer/openFolder/title/description/description/roomList" index="0" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_12aei")
+theme_override_font_sizes/font_size = 55
+text = "Sala 01"
+flat = true
+alignment = 0
+
+[node name="previous" parent="container/buttonsContainer" index="1"]
+disabled = true
+
+[node name="next" parent="container/buttonsContainer" index="2"]
+disabled = true
+
+[node name="Panel" type="Panel" parent="." index="3"]
+layout_mode = 0
+offset_left = 731.76337
+offset_top = 519.49036
+offset_right = 949.2471
+offset_bottom = 587.1625
+rotation = -0.14835298
+theme_override_styles/panel = SubResource("StyleBoxFlat_6f6vn")
+
+[node name="text" type="Label" parent="Panel" index="0"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.205765
+offset_top = -15.005657
+offset_right = 99.794235
+offset_bottom = 15.994343
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.7285387, 0.035465617, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "TOP SECRET"
+horizontal_alignment = 1

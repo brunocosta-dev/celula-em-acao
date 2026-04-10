@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://d73fubvdhl8t"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_xsio0"]
+[ext_resource type="Texture2D" uid="uid://bu1ydp2ia4f31" path="res://images/Glossary/ATP_mutante.png" id="2_f2q0p"]
+
+[node name="AtpMutanteGlossary" instance=ExtResource("1_xsio0")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -353.57123
+offset_right = 317.85733
+offset_bottom = 350.0
+texture = ExtResource("2_f2q0p")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "ATP MUTANTE"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_bottom = 245.375
+text = "ATP defeituoso que não fornece ener-
+gia."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+text = "A célula tenta usa-lo, mas ele falha."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Pode enganar o sistema, levando a fa-
+lhas energéticas."

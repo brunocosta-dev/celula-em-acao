@@ -1,0 +1,84 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcn8vp6lse7r6"]
+
+[ext_resource type="PackedScene" uid="uid://cm6b6wyk6smkh" path="res://ui/glossaryPages/default_glossary.tscn" id="1_5mncq"]
+[ext_resource type="Script" uid="uid://dsu7pnmvf8m23" path="res://ui/glossaryPages/code_glossary.gd" id="2_8alfv"]
+
+[node name="SuspectsListTemplate" instance=ExtResource("1_5mncq")]
+script = ExtResource("2_8alfv")
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -335.7143
+offset_top = -275.0
+offset_right = 335.7143
+offset_bottom = 275.0
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "NOME DO SUSPEITO"
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+text = "Função"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_right = 588.786
+
+[node name="title2" type="Label" parent="ShadowLayer/openFolder" index="3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 185.85693
+offset_top = 699.99976
+offset_right = 1335.8574
+offset_bottom = 815.99976
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 85
+text = "Defeito"
+
+[node name="description" type="Label" parent="ShadowLayer/openFolder/title2" index="0"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -499.99988
+offset_top = 76.375244
+offset_right = 600.0001
+offset_bottom = 159.37524
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 60
+text = "Aqui vai o texto"
+
+[node name="title3" type="Label" parent="ShadowLayer/openFolder" index="4"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 185.85693
+offset_top = 1124.9998
+offset_right = 1335.8574
+offset_bottom = 1240.9998
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 85
+text = "Papel"
+
+[node name="description" type="Label" parent="ShadowLayer/openFolder/title3" index="0"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -511.21417
+offset_top = 65.125244
+offset_right = 588.7859
+offset_bottom = 148.12524
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 60
+text = "Aqui vai o texto"

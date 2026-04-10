@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://42imr7fkdpx6"
-path="res://.godot/imported/menu.png-09788ebfe49b6ddbddfddd3ff6e0248b.ctex"
+uid="uid://cohw2jhyo28iv"
+path="res://.godot/imported/Mitocondria_zumbi.png-caa7a35eb52d6a0f91ef7232383f8d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/menu.png"
-dest_files=["res://.godot/imported/menu.png-09788ebfe49b6ddbddfddd3ff6e0248b.ctex"]
+source_file="res://images/Glossary/Mitocondria_zumbi.png"
+dest_files=["res://.godot/imported/Mitocondria_zumbi.png-caa7a35eb52d6a0f91ef7232383f8d6e.ctex"]
 
 [params]
 

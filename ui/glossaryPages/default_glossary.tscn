@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm6b6wyk6smkh"]
+
+[ext_resource type="PackedScene" uid="uid://bmcp40hpka4et" path="res://ui/defaultTemplate.tscn" id="1_3v0c1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_63ba1"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_py3xt"]
+
+[node name="DefaultGlossary" instance=ExtResource("1_3v0c1")]
+script = null
+
+[node name="paperDesign" type="Panel" parent="ShadowLayer/openFolder" index="0"]
+layout_mode = 1
+offset_left = 350.00006
+offset_top = 62.49998
+offset_right = 1100.0
+offset_bottom = 681.25
+theme_override_styles/panel = SubResource("StyleBoxFlat_63ba1")
+
+[node name="photo" type="TextureRect" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.5715
+offset_top = -268.75
+offset_right = 328.57132
+offset_bottom = 268.75
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="clipDesign" type="Panel" parent="ShadowLayer/openFolder/paperDesign" index="1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -237.85715
+offset_top = -15.625
+offset_right = -146.42856
+offset_bottom = 178.12503
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_py3xt")
+
+[node name="name" type="Label" parent="ShadowLayer/openFolder" index="1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1246.429
+offset_top = 79.5
+offset_right = -96.428955
+offset_bottom = 195.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 105
+text = "Coloque o nome aqui"
+horizontal_alignment = 1
+
+[node name="title" parent="ShadowLayer/openFolder" index="2"]
+offset_left = 185.85718
+offset_right = 1335.8574
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+offset_left = -511.21405
+offset_right = 393.78595

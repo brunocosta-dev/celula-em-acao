@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpi684wneil0b"]
+
+[ext_resource type="PackedScene" uid="uid://bmcp40hpka4et" path="res://ui/defaultTemplate.tscn" id="1_3q8bd"]
+[ext_resource type="Script" uid="uid://b5cx64o3ydgiw" path="res://ui/tutorialPages/code_tutorial.gd" id="2_vm63u"]
+
+[node name="Tutorial" instance=ExtResource("1_3q8bd")]
+script = ExtResource("2_vm63u")
+
+[node name="title" parent="ShadowLayer/openFolder" index="0"]
+text = "Como Jogar"
+
+[node name="previous" parent="container/buttonsContainer" index="1"]
+disabled = true

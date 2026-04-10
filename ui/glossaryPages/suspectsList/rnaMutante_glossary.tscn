@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ed0ryqnkcy7a"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_e1q7v"]
+[ext_resource type="Texture2D" uid="uid://dtn2e4gds3ohx" path="res://images/Glossary/RNA_mutante.png" id="2_e1q7v"]
+
+[node name="RnaMutanteGlossary" instance=ExtResource("1_e1q7v")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -564.28577
+offset_top = -359.375
+offset_right = 564.28577
+offset_bottom = 359.375
+texture = ExtResource("2_e1q7v")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "RNA MUTANTE"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "RNA defeituoso."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+text = "Gera proteínas que não funcionam"
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+text = "Leva falhas mitocondriais graves"
+
+[node name="next" parent="container/buttonsContainer" index="2"]
+disabled = true

@@ -1,0 +1,122 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvtywrudq6iky"]
+
+[ext_resource type="PackedScene" uid="uid://dsbfbdye7od17" path="res://ui/default_background.tscn" id="1_4c782"]
+[ext_resource type="Script" uid="uid://baqw00o7yvfgo" path="res://ui/menu.gd" id="2_2ot4n"]
+[ext_resource type="Texture2D" uid="uid://dpppfeimbd44f" path="res://images/closedFolder.png" id="3_fcydj"]
+
+[node name="DefaultMenu" instance=ExtResource("1_4c782")]
+script = ExtResource("2_2ot4n")
+
+[node name="closedFolder" type="TextureRect" parent="." index="2"]
+layout_mode = 0
+offset_left = 237.99998
+offset_top = 82.00001
+offset_right = 3302.0
+offset_bottom = 1850.0
+scale = Vector2(0.28, 0.32)
+texture = ExtResource("3_fcydj")
+flip_h = true
+
+[node name="gameTitle" type="Label" parent="closedFolder" index="0"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -203.85742
+offset_top = 327.625
+offset_right = 168.14258
+offset_bottom = 580.625
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 185
+text = "C S I"
+horizontal_alignment = 1
+
+[node name="gameSubTitle" type="Label" parent="closedFolder" index="1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -452.5
+offset_top = -286.2505
+offset_right = 452.5
+offset_bottom = -176.25049
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_font_sizes/font_size = 80
+text = "Célula Sob Investigação"
+
+[node name="buttonsContainer" type="VBoxContainer" parent="closedFolder" index="2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -406.78564
+offset_top = -34.375244
+offset_right = 403.71436
+offset_bottom = 715.62476
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+
+[node name="newGameButton" type="Button" parent="closedFolder/buttonsContainer" index="0" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "Novo Jogo"
+flat = true
+
+[node name="tutorialButton" type="Button" parent="closedFolder/buttonsContainer" index="1" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "Como Jogar"
+flat = true
+
+[node name="glossaryButton" type="Button" parent="closedFolder/buttonsContainer" index="2" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "Glossário"
+flat = true
+
+[node name="creditsButton" type="Button" parent="closedFolder/buttonsContainer" index="3" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "Créditos
+"
+flat = true
+
+[node name="quitButton" type="Button" parent="closedFolder/buttonsContainer" index="4" groups=["button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.17254902, 0.06666667, 0, 0.52156866)
+theme_override_colors/font_focus_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 59
+text = "Sair
+"
+flat = true

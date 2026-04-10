@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6dockniyi2q1"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_ys5ks"]
+[ext_resource type="Texture2D" uid="uid://u8tqkbob7vc2" path="res://images/Glossary/Mito_energetico.png" id="2_vct7v"]
+
+[node name="MitoEnergeticoGlossary" instance=ExtResource("1_ys5ks")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -267.8569
+offset_top = -295.0
+offset_right = 317.85733
+offset_bottom = 295.0
+texture = ExtResource("2_vct7v")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "MITO ENERGÉTICO"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Produz ATP com eficiência."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+offset_bottom = 245.375
+text = "Se faltar glicose, oxigênio ou enzimas
+sua produção cai."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Pode ser herói ou culpado se estiver
+ausente"

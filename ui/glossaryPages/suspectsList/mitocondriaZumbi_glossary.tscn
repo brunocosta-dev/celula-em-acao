@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn7au17ncf810"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_7cbtf"]
+[ext_resource type="Texture2D" uid="uid://cohw2jhyo28iv" path="res://images/Glossary/Mitocondria_zumbi.png" id="2_6i77r"]
+
+[node name="MitocondriaZumbiGlossary" instance=ExtResource("1_7cbtf")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -575.00006
+offset_top = -303.125
+offset_right = 535.7145
+offset_bottom = 296.875
+texture = ExtResource("2_6i77r")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "MITOCÔNDRIA ZUMBI"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Parece viva, mas não funciona"
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+offset_bottom = 245.375
+text = "Não produz energia e ainda consome
+nutrientes."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_bottom = 234.125
+text = "Uma das mais perigosas, drena recur-
+sos sem retorno."

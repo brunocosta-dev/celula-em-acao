@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://clpdhl77pb5me"]
+
+[ext_resource type="PackedScene" uid="uid://bcn8vp6lse7r6" path="res://ui/glossaryPages/suspectsList/suspectsListTemplate.tscn" id="1_e0vhi"]
+[ext_resource type="Texture2D" uid="uid://b3gwf488svpey" path="res://images/Glossary/Organoide_clonado.png" id="2_bx0lh"]
+
+[node name="organoideClonadoGlossary" instance=ExtResource("1_e0vhi")]
+
+[node name="photo" parent="ShadowLayer/openFolder/paperDesign" index="0"]
+offset_left = -616.96423
+offset_top = -304.68756
+offset_right = 616.96423
+offset_bottom = 304.68756
+texture = ExtResource("2_bx0lh")
+
+[node name="name" parent="ShadowLayer/openFolder" index="1"]
+text = "ORGANOIDE CLONADO"
+
+[node name="description" parent="ShadowLayer/openFolder/title" index="0"]
+text = "Cópia intável de uma organela."
+
+[node name="description" parent="ShadowLayer/openFolder/title2" index="0"]
+text = "Funciona mal e atrapalha reações."
+
+[node name="description" parent="ShadowLayer/openFolder/title3" index="0"]
+offset_right = 628.57153
+text = "Confunde a célula e atrapalha reações."

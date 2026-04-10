@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3g5nj2sauhq4"
-path="res://.godot/imported/Mapa_v0.01.png-cffca26a0e39f461293e66d45c878f2e.ctex"
+uid="uid://bu1ydp2ia4f31"
+path="res://.godot/imported/ATP_mutante.png-5ae19793d963d9f3632663928f779b94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/Mapa_v0.01.png"
-dest_files=["res://.godot/imported/Mapa_v0.01.png-cffca26a0e39f461293e66d45c878f2e.ctex"]
+source_file="res://images/Glossary/ATP_mutante.png"
+dest_files=["res://.godot/imported/ATP_mutante.png-5ae19793d963d9f3632663928f779b94.ctex"]
 
 [params]
 

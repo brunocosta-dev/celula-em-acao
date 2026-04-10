@@ -6,11 +6,9 @@ func _ready() -> void:
 
 func _on_button_pressed(_button: Button) -> void:
 	match _button.name:
-		"NewGame":
-			get_tree().change_scene_to_file("res://scenes/levels/Levels01.tscn")
-		"Options":
-			get_tree().change_scene_to_file("res://ui/option.tscn")
-		"Creditis":
+		"home":
+			get_tree().change_scene_to_file("res://ui/menu.tscn")
+		"previous":
 			pass
-		"Quit":
-			get_tree().quit()
+		"next":
+			pass
