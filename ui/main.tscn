@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnk6cjv2nn0pc"]
+
+[ext_resource type="PackedScene" uid="uid://d01crqn61fe1k" path="res://scenes/levels/game_board.tscn" id="1_vcrq8"]
+[ext_resource type="PackedScene" uid="uid://bjhmq88yjisi5" path="res://scenes/player/Player.tscn" id="2_loxbi"]
+
+[node name="Main" type="Node2D"]
+
+[node name="GameBoard" parent="." instance=ExtResource("1_vcrq8")]
+position = Vector2(145, 296)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_loxbi")]
+z_index = 1
+position = Vector2(530, 314)
